@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>brick breaker 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script> 
+</head>
+<body>
+    
+    <div id="page">
+        <header> 
+                <h1>Bienvenue sur mon Jeu CV <br/> Casse-brique 2D </h1>
+                <ul>
+                    <li> <a  href="./index.html"> Accueil</a> </li>
+                    <li> <a  href="./CV/CV_Babacar_MOREAU.pdf"> Telechargement CV</a> </li>
+                    <li> <a id="cmd" href="#"> Commandes</a> </li>
+                    <li> <a id="Regles" href="#"> Règles du Jeu</a> </li>
+                </ul>
+        </header>
+        <div id="start"> Cliquez ici pour "Jouer" </div>
+        <div id="competences"> 
+            <h1>Compétences</h1>
+            <div id="logo">
+                <img src="./images/html5.png" alt="logoHtml">  
+                <img src="./images/css3.png" alt="logoCss">
+                <img src="./images/js.png" alt="logoJS">
+                <img src="./images/angular.png" alt="logoAngular">
+                <img src="./images/node.png" alt="logoNode">
+                <img src="./images/mongoDB.png" alt="logoMongo">
+                <img src="./images/bootstrap.png" alt="logoBoots">
+            </div>
+            
+        </div>   
+        <canvas id="monCanvas"> </canvas> 
+        <img id="CV" src="./images/CV.png" alt="monCV">
+        <div id="commandes"> Déplacement du pad : souris <br/> lancer la balle : click gauche de la souris </div>
+        <div id="regles"> Votre objectif est de détruire tous les blocs de mon Casse brique pour avoir accès à l'intégralité de mon CV, peu importe le niveau selectionné.Facile non? </div> 
+    </div>
+    
+   
+    <audio id="collision" src="./Audio/oneTapBrick.wav"></audio>
+    <audio id="intro" src="./Audio/intro.wav"></audio>
+    <audio id="detruit" src="./Audio/Smashing.wav"></audio>
+    <audio id="victory" src="./Audio/victory.mp3"></audio>
+    <audio id="gameOver" src="./Audio/gameOver.wav"></audio>
+
+</body>
+</html>

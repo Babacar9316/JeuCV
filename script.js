@@ -411,6 +411,7 @@ window.addEventListener('load', function(){
             document.getElementById('gameOver').play();
             alert("GAME OVER");
             document.location.reload();
+            return;
 
         } else {
             balle.x =  xCursor + (joueur.largeur / 2);
